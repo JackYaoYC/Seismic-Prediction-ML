@@ -10,7 +10,7 @@ This project implements a comprehensive pipeline for earthquake forecasting, com
 
 ## 🌟 Key Features
 
-1.  **Seismic Feature Engineering**: Extracts physical and statistical features (e.g., b-value, Z-value, Benioff Strain) from raw catalogs using sliding windows.
+1.  **Seismic Feature Engineering**: Extracts physical and statistical features (e.g., b-value, Z-value, Time elaps, etc.) from raw catalogs using sliding windows.
 2.  **Binary Classification**: Benchmarks 8 ML models (RF, XGBoost, etc.) to predict the occurrence of large earthquakes.
 3.  **Model Explainability**: Uses **SHAP (SHapley Additive exPlanations)** to interpret model decisions and identify precursor features.
 4.  **Magnitude Prediction (Deep Learning)**: Implements **LSTM**, **Bi-LSTM**, and **Transformer** models with automated hyperparameter tuning (**Optuna**) for precise magnitude regression.
@@ -32,6 +32,20 @@ Seismic-Prediction-ML/
 ├── README.md                # Project documentation
 └── LICENSE                  # MIT License
 ```
+
+## 📂 Data Availability
+Due to file size limitations on GitHub, this repository contains a **Sample Dataset** to demonstrate the pipeline's functionality.
+
+### **1. Included Datasets (Ready to Run)**
+The following datasets are included in the **`data/`** folder and can be used to run the code immediately:
+* **California Data:** **`data/Californiadata.dat`** (Real-world data sample)
+* **Synthetic Data:** **`data/Simulated.dat`** (Simulation sample)
+
+### **2. Full Datasets (Download Required)**
+The large-scale datasets (Sichuan-Yunnan & Japan) used in the paper are hosted on Google Drive. 
+Please download the file from the link below and place the extracted data into the **`data/`** directory to reproduce the full results.
+* **Download Link:** [Google Drive - Full Datasets](https://drive.google.com/file/d/17eHhcv19F54p9o1AuEFyh6Ln2N2JAX5D/view?usp=sharing)
+  * Contains: Japan Region Data, Sichuan-Yunnan Region Data
 
 ## 🚀 Getting Started
 
@@ -90,7 +104,7 @@ python src/predict_bilstm.py --data ./data/California_features.csv --trials 50 -
 python src/predict_transformer.py --data ./data/California_features.csv --trials 50 --epochs 200
 ```
 
-#### Note: The **`trails`** argument controls how many hyperparameter combinations Optuna will try. Higher values yield better results but take longer.
+#### Note: The **`trials`** argument controls how many hyperparameter combinations Optuna will try. Higher values yield better results but take longer.
 
 ## 📊 Outputs & Visualization
 
