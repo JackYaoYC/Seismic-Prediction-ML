@@ -130,12 +130,14 @@ For each model (`LSTM, Bi-LSTM, Transformer`), the following files are generated
 ## 📝 Citation
 If you use this code or dataset in your research, please cite our paper (currently under review):
 
+```text
 @article{Yao2026,
   title={Bridging Synthetic and Observed Seismicity: An Interpretable Machine Learning Framework for Revealing Distinct Precursor Mechanisms},
   author={Yao, Yuechen and Jia, Ke and Zhang, Yizhi and Jiang, Yifan and Deng, Kai and Zhou, Shiyong and Jiang, Changsheng},
   journal={Submitted to Computers & Geosciences},
   year={2026}
 }
+```
 
 ## 📜 License
 This project is licensed under the MIT License - see the LICENSE file for details.
