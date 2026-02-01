@@ -4,3 +4,7 @@ matplotlib
 scikit-learn
 xgboost
 lightgbm
+shap
+torch
+optuna
+fontTools
