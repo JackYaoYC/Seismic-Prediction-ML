@@ -50,7 +50,7 @@ The observed earthquake catalogs used in this study are publicly available from 
     * Website: [https://earthquake.usgs.gov/earthquakes/search/](https://earthquake.usgs.gov/earthquakes/search/)
 * **Japan Region**:
     * Source: Japan Meteorological Agency (JMA) Unified Earthquake Catalog
-    * Website: [https://www.data.jma.go.jp/svd/eqev/data/en/index.html](https://www.data.jma.go.jp/svd/eqev/data/en/index.html)
+    * Website: [https://data.jma.go.jp/eqev/data/bulletin/hypo.html](https://data.jma.go.jp/eqev/data/bulletin/hypo.html)
 
 *Note: After downloading, please place the raw data files into the `data/` directory and update the file paths in the scripts accordingly.*
 
