@@ -37,7 +37,7 @@ Seismic-Prediction-ML/
 Due to file size limitations on GitHub, this repository contains a **Sample Dataset** to demonstrate the pipeline's functionality.
 
 ### 1. Synthetic Data (Included)
-The **Synthetic Earthquake Catalog** (`data/Simulated.dat`) is included in this repository. This dataset serves as a benchmark for verifying the code pipeline and model functionality.
+The **Synthetic Earthquake Catalog** (`data/syntheticdata.dat`) is included in this repository. This dataset serves as a benchmark for verifying the code pipeline and model functionality.
 
 ### 2. Real-World Data (Sources)
 The observed earthquake catalogs used in this study are publicly available from their respective official agencies. Users can download the data from the following websites:
