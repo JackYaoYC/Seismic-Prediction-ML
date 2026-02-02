@@ -36,16 +36,23 @@ Seismic-Prediction-ML/
 ## 📂 Data Availability
 Due to file size limitations on GitHub, this repository contains a **Sample Dataset** to demonstrate the pipeline's functionality.
 
-### **1. Included Datasets (Ready to Run)**
-The following datasets are included in the **`data/`** folder and can be used to run the code immediately:
-* **California Data:** **`data/Californiadata.dat`** (Real-world data sample)
-* **Synthetic Data:** **`data/Simulated.dat`** (Simulation sample)
+### 1. Synthetic Data (Included)
+The **Synthetic Earthquake Catalog** (`data/Simulated.dat`) is included in this repository. This dataset serves as a benchmark for verifying the code pipeline and model functionality.
 
-### **2. Full Datasets (Download Required)**
-The large-scale datasets (Sichuan-Yunnan & Japan) used in the paper are hosted on Google Drive. 
-Please download the file from the link below and place the extracted data into the **`data/`** directory to reproduce the full results.
-* **Download Link:** [Google Drive - Full Datasets](https://drive.google.com/file/d/17eHhcv19F54p9o1AuEFyh6Ln2N2JAX5D/view?usp=sharing)
-  * Contains: Japan Region Data, Sichuan-Yunnan Region Data
+### 2. Real-World Data (Sources)
+The observed earthquake catalogs used in this study are publicly available from their respective official agencies. Users can download the data from the following websites:
+
+* **Sichuan-Yunnan Region**:
+    * Source: China Earthquake Networks Center (CENC)
+    * Website: [http://data.earthquake.cn](http://data.earthquake.cn)
+* **California Region**:
+    * Source: United States Geological Survey (USGS) Comprehensive Catalog
+    * Website: [https://earthquake.usgs.gov/earthquakes/search/](https://earthquake.usgs.gov/earthquakes/search/)
+* **Japan Region**:
+    * Source: Japan Meteorological Agency (JMA) Unified Earthquake Catalog
+    * Website: [https://www.data.jma.go.jp/svd/eqev/data/en/index.html](https://www.data.jma.go.jp/svd/eqev/data/en/index.html)
+
+*Note: After downloading, please place the raw data files into the `data/` directory and update the file paths in the scripts accordingly.*
 
 ## 🚀 Getting Started
 
@@ -62,7 +69,7 @@ pip install -r requirements.txt
 ### Step 1: Feature Extraction
 
 Convert raw earthquake catalog data (e.g., .dat files) into a feature matrix for machine learning.
-Note: You can configure window size (dt, Twindow) inside the script.
+*Note: You can configure window size (dt, Twindow) inside the script.
 
 ```Bash
 python src/feature_extraction.py
