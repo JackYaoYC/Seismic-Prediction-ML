@@ -69,7 +69,7 @@ pip install -r requirements.txt
 ### Step 1: Feature Extraction
 
 Convert raw earthquake catalog data (e.g., .dat files) into a feature matrix for machine learning.
-*Note: You can configure window size (dt, Twindow) inside the script.
+*Note: You can configure window size (dt, Twindow) inside the script.*
 
 ```Bash
 python src/feature_extraction.py
@@ -111,7 +111,7 @@ python src/predict_bilstm.py --data ./data/California_features.csv --trials 50 -
 python src/predict_transformer.py --data ./data/California_features.csv --trials 50 --epochs 200
 ```
 
-#### Note: The **`trials`** argument controls how many hyperparameter combinations Optuna will try. Higher values yield better results but take longer.
+*Note: The **`trials`** argument controls how many hyperparameter combinations Optuna will try. Higher values yield better results but take longer.*
 
 ## 📊 Outputs & Visualization
 
